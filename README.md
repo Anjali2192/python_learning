@@ -22,15 +22,21 @@ This repository showcases my Python learning journey and projects. Each script d
   * Validates dimensions to ensure matrices can be added
   * Outputs the resulting matrix in a clean format
 
-## Project 3: Frequency of character🈚
+## Project 3: Unique Characters Checker 🔤
 
-  The frequency.py script is a program that count the frequency of each character in a string using a dictionary.
+  The unique_chars.py script checks whether all characters in a given string are unique.
 
 ### Features🪶
 
-  * creates a dictionary making each unique string a key
-  * User input validation
-  * Counts frequency of each string
+  * Counts character frequency using a dictionary
+  * Detects if any character is repeated
+  * Prints whether the string has all unique characters or  not
+
+### Example Usage🪴
+
+  Input string: apple
+  {'a': 1, 'p': 2, 'l': 1, 'e': 1}
+  All characters are not unique
 
 
 ## How to Run🚀

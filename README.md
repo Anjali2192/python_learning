@@ -22,6 +22,17 @@ This repository showcases my Python learning journey and projects. Each script d
   * Validates dimensions to ensure matrices can be added
   * Outputs the resulting matrix in a clean format
 
+## Project 3: Frequency of character🈚
+
+  The frequency.py script is a program that count the frequency of each character in a string using a dictionary.
+
+### Features🪶
+
+  * creates a dictionary making each unique string a key
+  * User input validation
+  * Counts frequency of each string
+
+
 ## How to Run🚀
 
   1. Clone this repository

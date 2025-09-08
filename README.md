@@ -38,6 +38,15 @@ This repository showcases my Python learning journey and projects. Each script d
   {'a': 1, 'p': 2, 'l': 1, 'e': 1}
   All characters are not unique
 
+## Project 4: Date and Time ⏰
+
+The datetime_example.py script uses Python’s datetime module to display the current date and time.
+
+### Features🪶
+
+  * Prints today’s date
+  * Prints current time
+  * Displays formatted date-time string
 
 ## How to Run🚀
 

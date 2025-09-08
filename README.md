@@ -13,7 +13,16 @@ This repository showcases my Python learning journey and projects. Each script d
   * Feedback on each guess ("too high" / "too low")
   * Counts the number of attempts until the correct guess
 
-### How to Run🚀
+## Project 2: Adding two matrices➕
+
+  The matrix_add.py script performs addition of two matrices.
+
+### Features🪶
+
+  * Validates dimensions to ensure matrices can be added
+  * Outputs the resulting matrix in a clean format
+
+## How to Run🚀
 
   1. Clone this repository
   2. Run the script

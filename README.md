@@ -34,8 +34,8 @@ This repository showcases my Python learning journey and projects. Each script d
 
 ### Example Usage🪴
 
-  Input string: apple
-  {'a': 1, 'p': 2, 'l': 1, 'e': 1}
+  Input string: apple          
+  {'a': 1, 'p': 2, 'l': 1, 'e': 1}                  
   All characters are not unique
 
 ## Project 4: Date and Time ⏰

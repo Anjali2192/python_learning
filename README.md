@@ -48,6 +48,16 @@ The datetime_example.py script uses Python’s datetime module to display the cu
   * Prints current time
   * Displays formatted date-time string
 
+## Project 5: Dice art 🎲
+
+The dice_art.py script uses random module to generate 2-D dices and total value of all the dices.
+
+### Features🪶
+
+  * User input validation
+  * Displays randomly generated 2-D dices
+  * shows total value of all the dices
+
 ## How to Run🚀
 
   1. Clone this repository

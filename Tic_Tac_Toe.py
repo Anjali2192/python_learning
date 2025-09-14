@@ -1,6 +1,11 @@
 # ● ┌ ─ ┐ │ └ ┘
 import random
-#board = ["   │   │   ",  "───│───│───", "   │   │   ",  "───│───│───",  "   │   │   "]
+box = [" A │ B │ C ",  
+       "───│───│───", 
+       " D │ E │ F ",  
+       "───│───│───",  
+       " G │ H │ I "
+    ]
 
 def players():
     name = ("A", "B")
@@ -11,7 +16,11 @@ def players():
         player2 = "B"
     return player1, player2
 
+def board():
+    for line in box:
+        print(line)
+
 p1, p2 = players()
 print(f"{p1} will start first!")
 print(f"{p2} your's next turn!")
-
+board()

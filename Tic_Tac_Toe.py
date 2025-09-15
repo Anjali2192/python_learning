@@ -1,11 +1,5 @@
 # ● ┌ ─ ┐ │ └ ┘
 import random
-box = [" A │ B │ C ",  
-       "───│───│───", 
-       " D │ E │ F ",  
-       "───│───│───",  
-       " G │ H │ I "
-    ]
 
 def players():
     name = ("A", "B")
@@ -17,10 +11,19 @@ def players():
     return player1, player2
 
 def board():
-    for line in box:
-        print(line)
+    for row in range(3):
+        for column in range(2):
+            print(" ", end=" ")
+        print(" ")
+        
+#def game():
+#    a = input(f"{p1} which box you want to replace with X(A-I): ").upper()
+#    if a == "A":
+#        print(board.box1)
+#        b = input(f"{p2} which box you want to replace with O(A-I): ").upper() 
 
 p1, p2 = players()
 print(f"{p1} will start first!")
 print(f"{p2} your's next turn!")
 board()
+#game()

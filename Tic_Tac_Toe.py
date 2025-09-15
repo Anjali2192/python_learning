@@ -10,12 +10,12 @@ def players():
         player2 = "B"
     return player1, player2
 
-def board():
-    for row in range(3):
-        for column in range(2):
-            print(" ", end=" ")
-        print(" ")
-        
+board = [[" " for _ in range(3)] for _ in range(3)]
+def print_board():
+    for row in board:
+        print(" | ".join(row))
+        print("--+---+--")
+
 #def game():
 #    a = input(f"{p1} which box you want to replace with X(A-I): ").upper()
 #    if a == "A":
@@ -25,5 +25,6 @@ def board():
 p1, p2 = players()
 print(f"{p1} will start first!")
 print(f"{p2} your's next turn!")
-board()
+
+print_board()
 #game()

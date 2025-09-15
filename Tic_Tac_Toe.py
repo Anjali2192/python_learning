@@ -12,9 +12,10 @@ def players():
 
 board = [[" " for _ in range(3)] for _ in range(3)]
 def print_board():
-    for row in board:
+    for i,row in enumerate(board):
         print(" | ".join(row))
-        print("--+---+--")
+        if i < 2:
+            print("--+---+--")
 
 #def game():
 #    a = input(f"{p1} which box you want to replace with X(A-I): ").upper()

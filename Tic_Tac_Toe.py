@@ -11,21 +11,26 @@ def players():
     return player1, player2
 
 board = [[" " for _ in range(3)] for _ in range(3)]
-def print_board():
+def print_board(board):
     for i,row in enumerate(board):
         print(" | ".join(row))
         if i < 2:
             print("--+---+--")
 
-#def game():
-#    a = input(f"{p1} which box you want to replace with X(A-I): ").upper()
-#    if a == "A":
-#        print(board.box1)
-#        b = input(f"{p2} which box you want to replace with O(A-I): ").upper() 
+def game(board):
+    while True:
+        row1 = int(input(f"{p1} which row you want to replace with X: "))
+        column1 = int(input(f"{p1} which column you want to replace with X: "))
+        board[row1][column1] = "X"
+        print(print_board(board))
+
+        row2 = int(input(f"{p2} which row you want to replace with O: "))
+        column2 = int(input(f"{p2} which column you want to replace with O: "))
+        board[row2][column2] = "O"
+        print(print_board(board))
 
 p1, p2 = players()
-print(f"{p1} will start first!")
-print(f"{p2} your's next turn!")
 
-print_board()
-#game()
+print(f"{p1} will start first!")
+
+game(board)

@@ -16,6 +16,24 @@ def print_board(board):
         print(" | ".join(row))
         if i < 2:
             print("--+---+--")
+            
+def win_p1():
+    if board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
+    elif board[0][0] == "X" and board[1][0] == "X" and board[2][0] == "X":
+        print(f"{p1} you won this game")
 
 def game(board):
     while True:

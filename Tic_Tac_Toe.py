@@ -74,14 +74,14 @@ def game(board):
         row1 = int(input(f"{p1} which row you want to replace with X: "))
         column1 = int(input(f"{p1} which column you want to replace with X: "))
         board[row1][column1] = "X"
-        print(print_board(board))
+        print_board(board)
         if win_p1(board) is True:
             break
     
         row2 = int(input(f"{p2} which row you want to replace with O: "))
         column2 = int(input(f"{p2} which column you want to replace with O: "))
         board[row2][column2] = "O"
-        print(print_board(board))
+        print_board(board)
         if win_p2(board) is True:
             break
 

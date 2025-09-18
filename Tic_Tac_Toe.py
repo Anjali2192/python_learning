@@ -1,13 +1,14 @@
-# ● ┌ ─ ┐ │ └ ┘
 import random
 
 def players():
-    name = ("A", "B")
+    A = input("Enter your name: ").capitalize()
+    B = input("Enter other player's name: ").capitalize()
+    name = (A, B)
     player1 = random.choice(name)
-    if player1 == "B":
-        player2 = "A"
+    if player1 == B:
+        player2 = A
     else:
-        player2 = "B"
+        player2 = B
     return player1, player2
 
 board = [[" " for _ in range(3)] for _ in range(3)]
@@ -101,22 +102,24 @@ def row_column(box):
 
 def game(board):
     while True:
-        box = input(f"{p1} Which box you want to replace with X: ").capitalize()
+        box = input(f"{p1} which box you want to replace with X: ").capitalize()
         row, column = row_column(box)
         board[row][column] = "X"
         print_board(board)
         if win_p1(board) is True:
             break
     
-        box = input(f"{p2} Which box you want to replace with O: ").capitalize()
+        box = input(f"{p2} which box you want to replace with O: ").capitalize()
         row, column = row_column(box)
         board[row][column] = "O"
         print_board(board)
         if win_p2(board) is True:
             break
 
+print("*******LET'S START******")
 p1, p2 = players()
 
+print()
 start_box = ["A | B | C",
              "--+---+--",
              "D | E | F",
@@ -127,6 +130,8 @@ start_box = ["A | B | C",
 for line in start_box:
     print(line)
 
+print()
 print(f"{p1} will start first!")
+print()
 
 game(board)

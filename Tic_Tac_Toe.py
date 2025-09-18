@@ -69,23 +69,54 @@ def win_p2(board):
         print(f"{p2} you won this game")
         return True
 
+def row_column(box):
+    if box == "A":
+        row = 0
+        column = 0   
+    elif box == "B":
+        row = 0
+        column = 1
+    elif box == "C":
+        row = 0
+        column = 2
+    elif box == "D":
+        row = 1
+        column = 0
+    elif box == "E":
+        row = 1
+        column = 1
+    elif box == "F":
+        row = 1
+        column = 2
+    elif box == "G":
+        row = 2
+        column = 0
+    elif box == "H":
+        row = 2
+        column = 1
+    elif box == "I":
+        row = 2
+        column = 2
+    return row, column
+
 def game(board):
     while True:
-        row1 = int(input(f"{p1} which row you want to replace with X: "))
-        column1 = int(input(f"{p1} which column you want to replace with X: "))
-        board[row1][column1] = "X"
+        box = input(f"{p1} Which box you want to replace with X: ").capitalize()
+        row, column = row_column(box)
+        board[row][column] = "X"
         print_board(board)
         if win_p1(board) is True:
             break
     
-        row2 = int(input(f"{p2} which row you want to replace with O: "))
-        column2 = int(input(f"{p2} which column you want to replace with O: "))
-        board[row2][column2] = "O"
+        box = input(f"{p2} Which box you want to replace with O: ").capitalize()
+        row, column = row_column(box)
+        board[row][column] = "O"
         print_board(board)
         if win_p2(board) is True:
             break
 
 p1, p2 = players()
+
 
 print(f"{p1} will start first!")
 

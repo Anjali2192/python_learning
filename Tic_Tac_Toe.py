@@ -117,6 +117,15 @@ def game(board):
 
 p1, p2 = players()
 
+start_box = ["A | B | C",
+             "--+---+--",
+             "D | E | F",
+             "--+---+--",
+             "G | H | I"
+             ]
+
+for line in start_box:
+    print(line)
 
 print(f"{p1} will start first!")
 

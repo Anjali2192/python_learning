@@ -70,6 +70,13 @@ def win_p2(board):
         print(f"{p2} you won this game")
         return True
 
+def draw(board):
+    for row in board:
+        for cell in row:
+            if cell == " ":
+                return False
+    return True
+
 def row_column(box):
     if box == "A":
         row = 0
@@ -102,21 +109,26 @@ def row_column(box):
 
 def game(board):
     while True:
-        box = input(f"{p1} which box you want to replace with X: ").capitalize()
+        box = input(f"{p1} which box you want to replace with X(A-I): ").capitalize()
         row, column = row_column(box)
         board[row][column] = "X"
         print_board(board)
         if win_p1(board) is True:
             break
+        if draw(board) is True:
+            print("The game is a draw")
+            break
     
-        box = input(f"{p2} which box you want to replace with O: ").capitalize()
+        box = input(f"{p2} which box you want to replace with O(A-I): ").capitalize()
         row, column = row_column(box)
         board[row][column] = "O"
         print_board(board)
         if win_p2(board) is True:
+            break  
+        if draw(board) is True:
             break
 
-print("*******LET'S START******")
+print("*******LET'S START*******")
 p1, p2 = players()
 
 print()
